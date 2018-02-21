@@ -14,7 +14,8 @@ GameStates.makePreloader = function( game ) {
             //	These are the assets we loaded in Boot.js
             //	A nice sparkly background and a loading progress bar
             background = game.add.sprite(0, 0, 'preloaderBackground');
-            preloadBar = game.add.sprite(300, 400, 'preloaderBar');
+            preloadBar = game.add.sprite(100, 400, 'preloaderBar');
+            preloadBar.scale.setTo(0.7,0.7);
     
             //	This sets the preloadBar sprite as a loader sprite.
             //	What that does is automatically crop the sprite from 0 to full-width
@@ -23,11 +24,15 @@ GameStates.makePreloader = function( game ) {
     
             //	Here we load the rest of the assets our game needs.
             //	As this is just a Project Template I've not provided these assets, swap them for your own.
-            game.load.image('titlePage', 'assets/title.jpg');
+            game.load.image('titlePage', 'assets/title.gif');
             game.load.atlas('playButton', 'assets/play_button.png', 'assets/play_button.json');
-            game.load.audio('titleMusic', ['assets/Poppers and Prosecco.mp3']);
+            //game.load.atlas('aboutButton', 'assets/play_button.png', 'assets/play_button.json');
+            game.load.image('titleBar', 'assets/titlebar.png');
+            game.load.audio('titleMusic', ['assets/bensound-scifi.mp3']);
+            game.load.audio('gameMusic', ['assets/OSRSBeatzStart.mp3'])
             //	+ lots of other required assets here
-            game.load.image( 'logo', 'assets/phaser.png' );
+            game.load.image('star', 'assets/star.png');
+            game.load.image('star', 'assets/star1.png');
         },
     
         create: function () {
