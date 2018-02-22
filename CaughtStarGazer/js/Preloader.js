@@ -29,11 +29,20 @@ GameStates.makePreloader = function( game ) {
             game.load.atlas('aboutButton', 'assets/aboutButton.png', 'assets/aboutButton.json');
             game.load.image('titleBar', 'assets/titlebar.png');
             game.load.audio('titleMusic', ['assets/bensound-scifi.mp3']);
-            game.load.audio('gameMusic', ['assets/OSRSBeatzStart.mp3'])
+            game.load.audio('gameMusic', ['assets/OSRSBeatzStart.mp3']);
+            game.load.audio('twinkle', ['assets/twinkle.mp3']);
+            game.load.audio('rockBreak', ['assets/Concretebreak.mp3']);
+            game.load.audio('win', ['assets/shine.mp3']);
+            game.load.audio('loss', ['assets/dark.mp3']);
+            game.load.audio('fail', ['assets/fail.mp3']);
             //	+ lots of other required assets here
             game.load.image('star', 'assets/star.png');
             game.load.image('starYellow', 'assets/starYellow.png');
             game.load.image('gameBG', 'assets/gameBG.png');
+            game.load.image('meteor', 'assets/meteor.png');
+            game.load.image('aboutText', 'assets/aboutText.png');
+            game.load.image('winScreen', 'assets/winScreen.png');
+            game.load.image('lossScreen', 'assets/lossScreen.png');
         },
     
         create: function () {
@@ -61,6 +70,9 @@ GameStates.makePreloader = function( game ) {
             }
     
         }
+
+
+
     
     };
 };

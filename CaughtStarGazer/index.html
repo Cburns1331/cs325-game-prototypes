@@ -11,6 +11,7 @@
 	<script src="js/MainMenu.js"></script>
 	<script src="js/Game.js"></script>
 	<script src="js/About.js"></script>
+	<script src="js/End.js"></script>
 	<!-- main.js must come last since it references the other ones. -->
 	<script src="js/main.js"></script>
 
@@ -34,75 +35,90 @@ body
 
 <ul>
 <li><strong>Originality:</strong>
-What is original about your game?
+It uses the mouse only to move the main object of the game(purple star), and the way the movement is set up, it makes the game have a learning curve in order to accurately get the star to go where you want it to.
 </li>
 
 <li><strong>Technical Merit:</strong>
-What is interesting about your game technology?
+It can flow through the states well, as well as having a fairly easy to use system.
 </li>
 
 <li><strong>Prototype Postmortem:</strong>
-What did you learn from this prototype?
-What was the easiest or hardest part of making it?
+I learned about making loading screens, main menus, states, emitters, etc.
+Hardest part about making it was probably getting the collisions/gravity/controls working the way I want them to, took a lot of tweaking. The easiest part was probably finding the music/sound affects.
 </li>
 
 <li><strong>Prototype Assets:</strong>
 Did you make your prototype assets from scratch? Did you borrow them? Cite your sources here.
 <ul>
-<li>Loading screen: self-made</li>
-<li>Puppy image: self-made</li>
-<li>Button: Phaser example <a href="https://phaser.io/examples/v2/buttons/action-on-click">Action On Click</a></li>
-<li>Bouncing Phaser image: <a href="https://phaser.io/download/logo">Phaser logo</a></li>
-<li>Music: "Poppers and Prosecco" Kevin MacLeod (<a href="incompetech.com">incompetech.com</a>). Licensed under <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons: By Attribution 3.0 License</a></li>
+<li>Loading screen/bar: self-made</li>
+<li>Backdrop: Edited from: <a href="https://gifer.com/en/5EDx">Gifer</a>"</li>
+<li>Buttons: Edited from Phaser example: <a href="https://phaser.io/examples/v2/buttons/action-on-click">Action On Click</a></li>
+<li>Stars: Edited from: <a href="http://piq.codeus.net/picture/304302/minecraft_nether_star">Stars</a></li>
+<li>Meteor: <a href="http://pixelartmaker.com/art/b0d28fcc8a7f281">Meteor</a></li>
+<li>Music: Main menu from: <a href="bensound.com">Bensound</a>. <br> GamePlay Song/Win/Loss Song from: <a href="https://soundcloud.com/osrsbeatz">OSRSBeatz</a>
+<br>Sounds from youtube: <a href="https://www.youtube.com/watch?v=QNGdIWuRM1E">YT</a><br>
+<a href="https://www.youtube.com/watch?v=7BNxIWxI2u4">YT</a><br>
+<a href="https://www.youtube.com/watch?v=vDRAaRLFHLU">YT</a></li>
 </ul>
 </li>
 
 <li><strong>Prototype Closest Other Game:</strong>
-Which other game most closely resembles your game? If you are borrowing code from a Phaser Example, you must say so here. If you borrow code from elsewhere, you must say so here.
+Which other game most closely resembles your game?
+I don't really know of one that is close to this? There are aspects of a lot of games intertwined in this game, but it's not really based off of anything.
+If you are borrowing code from a Phaser Example, you must say so here. If you borrow code from elsewhere, you must say so here.
 <ul>
-<li>The code for this example is adapted from the <a href="https://github.com/photonstorm/phaser/tree/v2.6.2/resources/Project%20Templates/Basic">Phaser Basic Project Template</a></li>
+<li>Learned from: <a href="https://phaser.io/docs/2.6.2/Phaser.Particles.Arcade.Emitter.html#frequency"></a> and https://phaser.io/examples/v2/arcade-physics/multiball"></a></li>
 </ul>
 </li>
 
 <li><strong>High Concept:</strong>
 A one-sentence summary of your game.
+Destroy the asteroids that are flying towards Earth, and help all the yellow stars make it to Earth!
 </li>
 
 <li><strong>Theme:</strong>
 State which of the Storymatic themes you used.
+Caught and Star Gazer.
 </li>
 
 <li><strong>Mandated Variety:</strong>
 State which input, randomness, genre, and play style you used in this prototype.
+Mouse only, slightly random because of the bounce factor, playstyle is performer/achiever?, genre is save the planet.
 </li>
 
 <li><strong>Prototype Goal:</strong>
-What game mechanic is this prototype evaluating?
+Wanted to work with controls via only the mouse and see how the mechanics of the game would work, as well as moving sprites from one side of the screen to the other and having different situations they could be put in throughout their journey.
 </li>
 
 <li><strong>Player Experience Goals:</strong>
 What experience do you want players to have when playing your game?
+Quick game that makes you learn to play with how the controls are laid out and have fun in a fast pace game.
 </li>
 
 <li><strong>Gameplay:</strong>
 A paragraph describing the actions the player can perform, the system dynamics, and the core mechanic. Include a concise explanation of the prototype’s inputs and their expected effects (how to play). You can also describe game play that is not in the prototype. You may include mock-up images for parts of the game not in the prototype.
+The player can click on any side of the purple star, and it will move in the opposite direction of the click, giving the player the control to propell it in whatever direction they would like. They can collide with stars and meteors, on collision with meteors they explode the meteor, with a star, they both bounce. Let three meteors hit the Earth, it's game over, get 5,000 points to win the game. You get points by getting the stars to the earth for a shooting star show.
 </li>
 
 <li><strong>Strategies:</strong>
 What player strategies do you expect will be effective at playing this game?
+Strategic clicking and click placement, I don't necessarily think spam clicking will help.
 </li>
 
 <li><strong>Story/Setting/Premise:</strong>
 A paragraph about the world your game is set in and who the characters are. What makes the game world and its occupants unique and interesting? Do the tokens represent something? If the game has a backstory, mention it here. If the game is abstract, then say so.
 How will the dramatic tension interact with the gameplay tension?
+Save the world and provide a festival of lights via shooting stars! Destroy the meteors and let all the stars get through for the humans to enjoy a light show. You are a star gazer in space that is tasked with this job.
 </li>
 
 <li><strong>Target Audience:</strong>
 A single sentence that describes the demographic you're trying to reach.
+Space enthusiasts, geologists, people who own a mouse.
 </li>
 
 <li><strong>Play Time:</strong>
 How long does your game take to play?
+0-5minutes.
 </li>
 
 </ul>
