@@ -26,13 +26,14 @@ GameStates.makePreloader = function( game ) {
             //	As this is just a Project Template I've not provided these assets, swap them for your own.
             game.load.image('titlePage', 'assets/title.gif');
             game.load.atlas('playButton', 'assets/play_button.png', 'assets/play_button.json');
-            //game.load.atlas('aboutButton', 'assets/play_button.png', 'assets/play_button.json');
+            game.load.atlas('aboutButton', 'assets/aboutButton.png', 'assets/aboutButton.json');
             game.load.image('titleBar', 'assets/titlebar.png');
             game.load.audio('titleMusic', ['assets/bensound-scifi.mp3']);
             game.load.audio('gameMusic', ['assets/OSRSBeatzStart.mp3'])
             //	+ lots of other required assets here
             game.load.image('star', 'assets/star.png');
-            game.load.image('star', 'assets/star1.png');
+            game.load.image('starYellow', 'assets/starYellow.png');
+            game.load.image('gameBG', 'assets/gameBG.png');
         },
     
         create: function () {

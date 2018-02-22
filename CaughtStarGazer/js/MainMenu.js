@@ -5,6 +5,7 @@ GameStates.makeMainMenu = function( game, shared ) {
 	var music = null;
     var playButton = null;
     var title = null;
+    var aboutButton;
     
     function startGame(pointer) {
 
@@ -37,7 +38,7 @@ GameStates.makeMainMenu = function( game, shared ) {
             title = game.add.sprite(75, 75, 'titleBar');
     
             playButton = game.add.button(303, 400, 'playButton', startGame, null, 'over', 'out', 'down');
-            //aboutButton = game.add.button(403, 400, 'aboutButton', aboutGame);
+            aboutButton = game.add.button(303, 475, 'aboutButton', aboutGame);
 
             // particle effects
             var starParticles = game.add.emitter(0, 0 , 20);
@@ -52,7 +53,7 @@ GameStates.makeMainMenu = function( game, shared ) {
             
             var starParticlesYellow = game.add.emitter(0, 0 , 20);
             starParticlesYellow.width = 500;
-            starParticlesYellow.makeParticles('star1');
+            starParticlesYellow.makeParticles('starYellow');
             starParticlesYellow.angle = -45;
             starParticlesYellow.minParticleScale = 0.05;
             starParticlesYellow.maxParticleScale = 0.1;
