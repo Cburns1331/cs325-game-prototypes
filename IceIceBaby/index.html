@@ -1,0 +1,128 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>Ice Ice Baby</title>
+	<script src="js/phaser.min.js"></script>
+	<!-- Boot.js must come first since it creates the BasicGame object
+	that stores all the states. -->
+	<script src="js/Boot.js"></script>
+	<script src="js/Preloader.js"></script>
+	<script src="js/MainMenu.js"></script>
+	<script src="js/Game.js"></script>
+	<script src="js/About.js"></script>
+	<script src="js/End.js"></script>
+	<!-- main.js must come last since it references the other ones. -->
+	<script src="js/main.js"></script>
+
+<style>
+body
+{
+    color: #777;
+    font-family: "Avenir", Verdana, sans-serif;
+}
+#readme
+{
+    margin-top: 10px;
+}
+</style>
+
+</head>
+<body>
+<div id="game"></div>
+<div id="readme">
+<h2>Ice Ice Baby</h2>
+
+<ul>
+<li><strong>Originality:</strong>
+What is original about your game?
+It is about a baby breaking out of an ice cave while dodging ice cubes.
+</li>
+
+<li><strong>Technical Merit:</strong>
+What is interesting about your game technology?
+It gives the illusion of the character moving through the game world, where really the game world is moving around the character.
+</li>
+
+<li><strong>Prototype Postmortem:</strong>
+What did you learn from this prototype?
+I learned about spawning in groups of sprites and how moving a whole group of them can work.
+What was the easiest or hardest part of making it?
+Figuring out the sprite part, and how to make the game balanced.
+</li>
+
+<li><strong>Prototype Assets:</strong>
+Did you make your prototype assets from scratch? Did you borrow them? Cite your sources here.
+<ul>
+<li>Loading screen: self-made</li>
+<li>Background: self-made</li>
+<li>Ice Cube Sprite: self-made</li>
+<li>Vanilla Ice: <a href="https://i.pinimg.com/236x/17/4a/22/174a22973b94f2880b749a24254a9a29--the-movie-vanilla.jpg">Vanilla Ice</a></li>
+<li>Snowflake: <a href="http://pixelartmaker.com/art/0bf14c4f375c4d2.png">Snowflakes</a></li>
+<li>Falling Ice Cube: <a href="http://pixelartmaker.com/art/d6e55b4f17d7d6a.png">Falling Ice Cube</a></li>
+<li>Bottle: <a href="http://www.minecraftguides.org/wp-content/uploads/2012/07/waterbottle2.gif">Bottle</a></li>
+<li>Music: All other songs <a href="https://www.youtube.com/osrsbeatz">OSRSBeatz</a></li>
+<li>Music: Ice Ice Baby <a href="incompetech.com">Ice Ice Baby</a></li>
+<li>Sound: Laugh <a href="http://soundbible.com/1825-Funny-Boy-Laugh.html">Laugh Sound</a></li>
+<li>Sound: Neck Snap <a href="http://soundbible.com/1953-Neck-Snap.html">Break Sound</a></li>
+
+<li><strong>Prototype Closest Other Game:</strong>
+Which other game most closely resembles your game? If you are borrowing code from a Phaser Example, you must say so here. If you borrow code from elsewhere, you must say so here.
+<ul>
+<li>I guess invaders? Because of the group of sprites moving together in a way? But not really like any games I know of.</li>
+</ul>
+</li>
+
+<li><strong>High Concept:</strong>
+You are a baby stuck in an ice cave, break the ice by running into it, get 10,000 points or 3 golden bottles to win while dodging the falling ice!
+</li>
+
+<li><strong>Theme:</strong>
+Ice!
+</li>
+
+<li><strong>Mandated Variety:</strong>
+State which input, randomness, genre, and play style you used in this prototype.
+Arrow keys only, variable speed, side scroller?
+</li>
+
+<li><strong>Prototype Goal:</strong>
+What game mechanic is this prototype evaluating?
+Variable speed and moving the map around the character
+</li>
+
+<li><strong>Player Experience Goals:</strong>
+What experience do you want players to have when playing your game?
+Quick reaction based experience, where they have to be quick or slow with their movement in order to avoid the ice cubes.
+</li>
+
+<li><strong>Gameplay:</strong>
+A paragraph describing the actions the player can perform, the system dynamics, and the core mechanic. Include a concise explanation of the prototype’s inputs and their expected effects (how to play). You can also describe game play that is not in the prototype. You may include mock-up images for parts of the game not in the prototype.
+Baby is always moving, can't stop it because you can't control babies! You can either go faster and maybe lose control, or go slower and try to dodge all of the ice, one you run out of ice on the row, you reset to the left side of the screen and the ice moves to you.
+</li>
+
+<li><strong>Strategies:</strong>
+What player strategies do you expect will be effective at playing this game?
+Either fast play in which the player tries to go as fast as possible and gets lucky on missing ice cubes, or slow and cautious to try and avoid all ice cubes.
+</li>
+
+<li><strong>Story/Setting/Premise:</strong>
+A paragraph about the world your game is set in and who the characters are. What makes the game world and its occupants unique and interesting? Do the tokens represent something? If the game has a backstory, mention it here. If the game is abstract, then say so.
+How will the dramatic tension interact with the gameplay tension?
+Baby stuck in an ice cave, wants to get out because it is cold and hungry, only two ways to do that, otherwise the baby doesn't make it out!
+</li>
+
+<li><strong>Target Audience:</strong>
+A single sentence that describes the demographic you're trying to reach.
+Anyone who is into quick and easy to play games.
+</li>
+
+<li><strong>Play Time:</strong>
+How long does your game take to play?
+Anywhere from 10 seconds to a few minutes depending on how good you are at dodging ice cubes.
+</li>
+
+</ul>
+</div>
+</body>
+</html>
