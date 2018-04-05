@@ -29,7 +29,7 @@ GameStates.makePreloader = function( game ) {
             game.load.atlas('aboutButton', 'assets/aboutButton.png', 'assets/aboutButton.json');
             game.load.image('titleBar', 'assets/titlebar.png');
             game.load.audio('titleMusic', ['assets/IceIceBaby.mp3']);
-            game.load.audio('gameMusic', ['assets/BookOfSpells.mp3']);
+            game.load.audio('gameMusic', ['assets/BookofSpells.mp3']);
             game.load.audio('win', ['assets/HomeSweetHome.mp3']);
             game.load.audio('loss', ['assets/StrandedTrapRemix.mp3']);
             game.load.audio('laugh', ['assets/laugh.mp3']);
