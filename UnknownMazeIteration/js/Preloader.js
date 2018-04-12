@@ -39,7 +39,7 @@ GameStates.makePreloader = function( game ) {
             game.load.atlas('aboutButton', 'assets/aboutButton.png', 'assets/aboutButton.json');
 						game.load.atlas('1Button', 'assets/1Button.png', 'assets/1Button.json');
 						game.load.atlas('2Button', 'assets/2Button.png', 'assets/2Button.json');
-						game.load.atlas('3Button', 'assets/3button.png', 'assets/3Button.json');
+						game.load.atlas('3Button', 'assets/3Button.png', 'assets/3Button.json');
 						game.load.atlas('resumeButton', 'assets/resumeButton.png', 'assets/resumeButton.json');
 						game.load.atlas('quitButton', 'assets/quitButton.png', 'assets/quitButton.json');
             game.load.image('titleBar', 'assets/titlebar.png');
