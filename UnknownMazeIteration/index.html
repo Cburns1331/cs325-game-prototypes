@@ -1,0 +1,140 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>Lost at Sea Iteration</title>
+	<script src="js/phaser.min.js"></script>
+	<!-- Boot.js must come first since it creates the BasicGame object
+	that stores all the states. -->
+	<script src="js/Boot.js"></script>
+	<script src="js/Preloader.js"></script>
+	<script src="js/MainMenu.js"></script>
+	<script src="js/LevelSelect.js"></script>
+	<script src="js/Game1.js"></script>
+	<script src="js/Game2.js"></script>
+	<script src="js/Game3.js"></script>
+	<script src="js/About.js"></script>
+	<script src="js/End.js"></script>
+	<!-- main.js must come last since it references the other ones. -->
+	<script src="js/main.js"></script>
+
+<style>
+body
+{
+    color: #777;
+    font-family: "Avenir", Verdana, sans-serif;
+}
+#readme
+{
+    margin-top: 10px;
+}
+</style>
+
+</head>
+<body>
+<div id="game"></div>
+<div id="readme">
+<h2>Lost at Sea Iteration</h2>
+
+<ul>
+<li><strong>Originality:</strong>
+What is original about your game?
+Limited view, search and rescue, maze runner.
+</li>
+
+<li><strong>Technical Merit:</strong>
+What is interesting about your game technology?
+Fog of war and maze interaction.
+</li>
+
+<li><strong>Prototype Postmortem:</strong>
+What did you learn from this prototype?
+I learned about tilemaps and Tiled, and how to make a sprite move through tight corridors relatively smoothly.
+</li>
+
+<li><strong>Prototype Assets:</strong>
+Did you make your prototype assets from scratch? Did you borrow them? Cite your sources here.
+<ul>
+<li>Loading screen: <a href="https://image.freepik.com/free-vector/pirate-island-background_23-2147639643.jpg">Freepik.com</a></li>
+<li>Main Menu/About Menu: (edited by me) <a href="https://www.freepik.com/free-vector/pirate-skull-and-a-map-on-the-wall_1296860.htm">Freepik.com</a></li>
+<li>WinScreen: (edited by me) <a href="https://www.freepik.com/free-vector/beach-background-with-parchment-with-hat_1256539.htm#term=pirate&page=1&position=38">Freepik.com</a></li>
+<li>LossScreen: (edited by me) <a href="https://www.freepik.com/free-vector/pirate-background-with-chest-full-of-coins_1125158.htm#term=pirate&page=8&position=22">Freepik.com</a></li>
+
+<li>Maze Designs: self-made (tiled)</li>
+<li>Ship/Tile Designs/Lost Men: <a href="http://kenney.nl/assets/pirate-pack">Pirate Pack by Kenney.nl</a></li>
+<li>Music: Pirates (Main Menu) <a href="https://www.youtube.com/watch?v=9mU8bNWmaiQ">AC: BF</a></li>
+<li>Music: Becalmed (Loss Screen) <a href="https://youtu.be/54XcftT4m-U?list=RDVLncnCk8540">Sea of Thieves</a></li>
+<li>Music: OST (Level 1) <a href="https://youtu.be/xcaGxxImVc0?list=RDVLncnCk8540">Sea of Thieves</a></li>
+<li>Music: BonsunBill (Level 2) <a href="https://youtu.be/9t8TFGTAAoU?list=RDVLncnCk8540">Sea of Thieves</a></li>
+<li>Music: Game Shanties (Level 3) <a href="https://www.youtube.com/watch?v=QOfC1PEKt1U">AC: BF</a></li>
+<li>Music: Drunken Sailor (Win Screen) <a href="https://www.youtube.com/watch?v=qGyPuey-1Jw&list=RDVLncnCk8540&index=17"> Irish Rovers</a></li>
+<li>Sound: Hooray! <a href="https://www.myinstants.com/instant/hooray/">Hooray Sound</a></li>
+
+<li><strong>Prototype Closest Other Game:</strong>
+Which other game most closely resembles your game? If you are borrowing code from a Phaser Example, you must say so here. If you borrow code from elsewhere, you must say so here.
+A maze runner.
+
+I got the idea/code for fog of war from here: https://samme.github.io/phaser-examples-mirror/bitmapdata/fog%20of%20war.html
+
+The pacman tutorial helped: https://phaser.io/tutorials/coding-tips-005
+
+<br><br><b>NEW STUFF:<br></b>
+I did almost a complete overhaul on the visuals and audio of the game (Loading screen, main menu, menu system in general, tiles). Everything looks a little better now. I added a level select and two other levels, labeled them easy, medium, and hard. Level 3 is the original level from last week, level 1 and 2 are the new ones(with new audio). I sped up the pace of the boat significantly, fixed the hooray issue (sorry about that). Added a pause menu that stops the physics of the game, and the music, this will let your resume or quit back to the level select after saying you lost because of forfeit.
+<br><br><br>
+<ul>
+</ul>
+</li>
+
+<li><strong>High Concept:</strong>
+Find your way through the watery maze while rescuing your crew mates.
+</li>
+
+<li><strong>Theme:</strong>
+Not required this week. 
+</li>
+
+<li><strong>Mandated Variety:</strong>
+State which input, randomness, genre, and play style you used in this prototype.
+Limited information, key input.
+</li>
+
+<li><strong>Prototype Goal:</strong>
+What game mechanic is this prototype evaluating?
+Fog of war and tiled maze movement.
+</li>
+
+<li><strong>Player Experience Goals:</strong>
+What experience do you want players to have when playing your game?
+A thought provoking challenge and memory game as to where they have been and where they need to go.
+</li>
+
+<li><strong>Gameplay:</strong>
+A paragraph describing the actions the player can perform, the system dynamics, and the core mechanic. Include a concise explanation of the prototype’s inputs and their expected effects (how to play). You can also describe game play that is not in the prototype. You may include mock-up images for parts of the game not in the prototype.
+Search for all three lost crew members and make it out the maze with them. Use the arrow keys to move. Pretty simple game but I think it's not bad.
+</li>
+
+<li><strong>Strategies:</strong>
+What player strategies do you expect will be effective at playing this game?
+Trying to memorize where they have been and where they think the lost pirates could be. Or just brute force searching everywhere.
+</li>
+
+<li><strong>Story/Setting/Premise:</strong>
+A paragraph about the world your game is set in and who the characters are. What makes the game world and its occupants unique and interesting? Do the tokens represent something? If the game has a backstory, mention it here. If the game is abstract, then say so.
+How will the dramatic tension interact with the gameplay tension?
+Pirates get lost at sea, time to help them out and get back to doing pirate things!
+</li>
+
+<li><strong>Target Audience:</strong>
+A single sentence that describes the demographic you're trying to reach.
+Anyone who likes sea shanties and pirates! Also people who like puzzles.
+</li>
+
+<li><strong>Play Time:</strong>
+How long does your game take to play?
+Could be short as in 2-3 minutes or a while depending on how good you are at mazes...
+</li>
+
+</ul>
+</div>
+</body>
+</html>
